@@ -1,0 +1,217 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #000;
+  font-size: 16px;
+  color: #fff;
+}
+
+header, .intro .intro-heading {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 50px;
+	padding-top: 60px;
+}
+
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+hr {
+	max-width: 70px;
+}
+
+.intro {
+	width: 100%;
+	height: 60%;
+    background-image: url(BlackLongLogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+
+.navbar-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 800;
+}
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px; 
+}
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-custom .navbar-brand {
+    color: #fff;
+    padding: 15px;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-custom .nav li a {
+    color: #fff;
+    padding: 10px;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: rgba(0, 173, 173, 1.0); 
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .navbar-custom.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -61px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  .navbar-custom.is-fixed .navbar-brand {
+    color: #404040;
+  }
+  .navbar-custom.is-fixed .navbar-brand:hover,
+  .navbar-custom.is-fixed .navbar-brand:focus {
+    color: #0085a1;
+  }
+  .navbar-custom.is-fixed .nav li a {
+    color: #404040;
+  }
+  .navbar-custom.is-fixed .nav li a:hover,
+  .navbar-custom.is-fixed .nav li a:focus {
+    color: #0085a1;
+  }
+  .navbar-custom.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff
+    background-color: transparent;
+}
+
+
+section {
+	padding: 70px 30px;
+}
+
+#mission {
+ background-color: #fff;
+ color: #000;
+}
+
+#goal {
+ background-color: #000;
+ color: #fff;
+}
+#team {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+#gaa {
+  background-color: #000;
+  text-align: center;
+}
+
+#projects {
+  padding: 0;
+}
+
+.carousel {
+  height: 75%;
+}
+
+.item, .active, .carousel-inner {
+  height: 100%
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+#involved {
+ background-color: #fff;
+ color: #000;
+ text-align: center;
+}
+
+
+
+.btn-default:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+i {
+	display: inline-block;
+  padding: 10px;
+  color: #000;
+}
+
+.fa-facebook-official:hover {
+  color:#008080;
+}
+
+.fa-instagram:hover {
+  color:#E5E572;
+}
+ .fa-twitter-square:hover {
+  color:#AA0078 ;
+ }
+
+footer {
+	background-color: #000;
+	padding: 50px 0 35px 0;
+	text-align: center;
+  color: #fff;
+}
